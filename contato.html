@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberto Pan - Contato</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header class="header-container">
+        <div class="logo">Roberto Chun Yan Pan</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content animate-fade">
+        <section class="contact-section">
+            <h1>Contato</h1>
+            <div class="form-container">
+                <form id="formContato">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome">
+                        <span class="error-msg" id="erro-nome">O preenchimento do nome é obrigatório.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="text" id="email" name="email">
+                        <span class="error-msg" id="erro-email">Insira um e-mail estruturalmente válido.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                        <span class="error-msg" id="erro-mensagem">Por favor, escreva uma mensagem.</span>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="modalSucesso" class="modal">
+        <div class="modal-content">
+            <h3>Mensagem enviada com sucesso!</h3>
+            <p>Seus dados foram validados via JavaScript Puro.</p>
+            <button id="btnFecharModal" class="btn-submit">Fechar</button>
+        </div>
+    </div>
+
+    <footer class="footer-container">
+        <p>&copy; 2026 - Roberto Chun Yan Pan. RU 5485564. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
